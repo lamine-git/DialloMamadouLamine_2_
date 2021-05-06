@@ -11,7 +11,7 @@ body
 
 .container
 {
-    width: 95%;
+    width: 98%;
     margin: auto;    
 }
 
@@ -95,110 +95,6 @@ button
 /***************fin input *********/
 
 
-@media screen and (max-width: 767px)
-{
-    header
-    {
-        background-image: url('logo/Reservia.svg');
-        background-position: 0px 15px;
-        background-repeat: no-repeat;
-    } 
-
-    .list
-    {
-        width: 100%;
-        display: flex;
-        padding: 0;
-    }
-
-    .item
-    {
-        width: 100%;
-    }
-
-    .link
-    {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        padding-bottom: 1.5rem;
-        border-bottom: 5px solid #F2F2F2;
-
-    }
-
-    .selected
-    {
-        border-bottom: solid #0065FC;
-        color: #0065FC;        
-    }
-
-    /* pour le filtre */
-
-    #filtre h2{
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 768px)
-{
-    header
-    {
-                
-        background-image: url('logo/Reservia@3x.png');
-        background-repeat: no-repeat;
-        background-position: 0px 35px;
-        background-size: 13%
-        
-    }
-
-    nav
-    {
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-        align-items: baseline;
-        padding-top: 30px;
-    }
-
-    .list
-    {
-        display: flex;
-        
-    }
-
-    .item
-    {
-        padding-left: 15px;
-    }
-
-    
-
-    .link
-    {
-        width: 100%;
-        display: inline-block;
-        text-align: center;
-        padding-top: 1.5rem;
-        border-top: 5px solid white;
-
-    } 
-    .selected
-    {
-        border-top: 5px solid #0065FC;
-        color: #0065FC;        
-    }
-
-    .element:nth-child(2)
-    {
-        order: 1;
-    }
-    
-    .element:nth-child(1)
-    {
-        order: 2;
-    }
-    
-}
 
 /* css filtre*/
 
@@ -291,3 +187,527 @@ button
 /* fin css filtre*/
 
 /*------------------ FIN HEADER -----------------------*/
+
+/*-------Debut de la partie hebergment et populaire ------*/
+
+.container_section, .container_aside{
+    border-radius: 18px;
+    background-color: #f2f2f2;
+  }
+  
+  .container_section .desc , .container_aside .desc{
+    margin-left: 10px;
+      
+  } 
+  .namehotel{
+    font-weight: bold;
+  }
+  
+  .gallery_section a, .gallery_aside a{
+    text-decoration: none;
+    
+  }
+
+  /* ------------- Les etoiles de notation--------*/
+.gallery_section .stars, .gallery_aside .stars{
+  
+    font-size: 10px;
+    /*margin-left: 10px;*/
+    margin-top: 10px;
+  }
+  
+  .fa-star {
+    color: #f2f2f2;
+  
+  }
+  .stars > .color {
+    color: #0065FC;
+  
+  }
+  
+  /* ---------------------Fin etoiles------------------------*/
+
+/*----------fin hergement et populaire---------------------------*/
+
+
+
+@media screen and (max-width: 767px)
+{
+    header
+    {
+        background-image: url('logo/Reservia.svg');
+        background-position: 0px 15px;
+        background-repeat: no-repeat;
+    } 
+
+    .list
+    {
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    .item
+    {
+        width: 100%;
+    }
+
+    .link
+    {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 5px solid #F2F2F2;
+
+    }
+
+    .selected
+    {
+        border-bottom: solid #0065FC;
+        color: #0065FC;        
+    }
+
+    /* pour le filtre */
+
+    #filtre h2{
+        width: 100%;
+    }
+
+    /*-------Debut de la partie hebergment et populaire ------*/
+    .container{
+        width: 100%;
+        margin: 0;
+    }
+  
+   
+  
+    .section_and_aside{
+        display: flex;
+        flex-direction: column-reverse;
+        
+        justify-content: center;
+    }
+  
+    .title_aside{
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+  
+    .container_section h2{
+        max-width: 400px;
+        width: 100%;
+    }
+  
+    .container_section, .container_aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border-radius: 0;
+        
+    }
+  
+    .container_aside{
+        padding-bottom: 20px;
+    }
+  
+    .container_section{
+        background-color: white;
+    }
+  
+    .gallery_aside, .gallery_section{
+        max-width: 400px;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    .gallery_section{
+        box-shadow: 3px 3px 3px #F2F2F2;
+    }
+    
+    .gallery_section img, .gallery_aside img{
+        width: 100%;
+        height: 130px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .afficherplus, .afficherplus a{
+        max-width: 400px;
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+}
+
+@media screen and (min-width: 768px)
+{
+    .container{
+        width: 737px;
+        margin: auto;    
+    }
+
+    header
+    {
+                
+        background-image: url('logo/Reservia@3x.png');
+        background-repeat: no-repeat;
+        background-position: 0px 35px;
+        background-size: 13%
+        
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+
+    .list
+    {
+        display: flex;
+        
+    }
+
+    .item
+    {
+        padding-left: 15px;
+    }
+
+    
+
+    .link
+    {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 5px solid white;
+
+    } 
+    .selected
+    {
+        border-top: 5px solid #0065FC;
+        color: #0065FC;        
+    }
+
+    .element:nth-child(2)
+    {
+        order: 1;
+    }
+    
+    .element:nth-child(1)
+    {
+        order: 2;
+    }
+
+    /*-------Debut de la partie hebergment et populaire ------*/
+    .section_and_aside{
+        display: flex;
+        flex-direction: column-reverse;
+        /* width: 95%; */
+        margin: auto;
+        align-items: center;
+    }
+    .container_section h2{
+        max-width: 690px;
+        width: 100%;
+    }
+  
+    .title_aside{
+        max-width: 690px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+   
+    .container_section, .container_aside{
+        width: 730px;
+    }
+  
+    .container_section{
+        /* width: 100%; */
+        display: flex;
+        flex-wrap: wrap;
+        /*align-items: center;*/
+        justify-content: center;
+              
+    }
+  
+    /* .gallery_section{
+        width: 340px;
+        height: 200px;
+        background-color: black;
+        margin: 10px;
+    } */
+    .gallery_section, .gallery_aside{
+        width: 340px;
+        height: 200px;
+        background-color: #fff;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .gallery_section img, .gallery_aside img{
+        width: 100%;
+        height: 133px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+  
+    .container_aside{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+        /* width: 100%; */
+  
+    }
+
+    .afficherplus, .afficherplus a{
+        width: 690px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .container{
+        width: 957px;
+        margin: auto;    
+    }
+
+    /*-------Debut de la partie hebergment et populaire ------*/
+    .section_and_aside{
+        display: flex;
+        flex-direction: row;
+        /*align-items: center;*/
+        justify-content: center;
+        align-items:baseline;
+  
+    }
+    
+    .container_section h2{
+        width: 500px; 
+        margin-bottom: 0px;
+    }
+  
+    .title_aside{
+        width: 340px;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    /* .container_aside h2{
+        width: 340px;
+        
+    } */
+  
+    .container_section{
+        width: 550px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f2f2f2;
+        margin-right: 20px;    
+    }
+  
+    /* .gallery_section{
+        width: 250px;
+        height: 200px;
+        background-color: black;
+        margin: 5px;
+    } */
+    .gallery_section{
+        width: 250px;
+        height: 200px;
+        background-color: #fff;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .gallery_section img{
+        width: 100%;
+        height: 133px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+    
+  
+    .container_aside{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        align-items: center;
+        width:360px;
+  
+         
+    }
+    
+    .gallery_aside{
+        width: 340px;
+        height: 150px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+  
+    }
+    .gallery_aside a{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }    
+  
+    .gallery_aside img{
+        width: 125px;
+        height: 140px;
+        object-fit: cover;
+  
+        border: 5px solid white;
+        border-radius: 10px 0px 0px 10px;
+        box-sizing: content-box;
+    
+    }
+    .gallery_aside p{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    .afficherplus, .afficherplus a{
+        width: 500px;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+
+    .container{
+        width: 1161px;
+        margin: auto;    
+    }
+    
+    /*-------Debut de la partie hebergment et populaire ------*/
+    .section_and_aside{
+        display: flex;
+        flex-direction: row;
+      
+        justify-content: center;
+        /* align-items: center;  */
+  
+    }
+    
+    .container_section h2{
+        width: 770px; 
+        margin-bottom: 0px;
+    }
+  
+    .container_aside h2{
+        width: 340px;
+    }
+  
+    .container_section{
+        width: 825px;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #f2f2f2;
+        margin-right: 20px;    
+    }
+  
+    .gallery_section{
+        width: 235px;
+        height: 200px;
+        background-color: #fff;
+        border: 5px solid #fff;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    .gallery_section img{
+        width: 100%;
+        height: 133px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+  
+    .container_aside{
+        display: flex;
+        flex-direction: column;
+        background-color: #f2f2f2;
+        width: 370px;
+        justify-content: center;
+        border-radius: 10px;
+         
+    }
+  
+    .gallery_aside{
+        width: 340px;
+        height: 150px;
+        background-color: white;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+  
+    }
+    .gallery_aside a{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+    }    
+  
+    .gallery_aside img{
+        width: 125px;
+        height: 140px;
+        object-fit: cover;
+  
+        border: 5px solid white;
+        border-radius: 10px 0px 0px 10px;
+        box-sizing: content-box;
+      
+    }
+    .gallery_aside p{
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .gallery_aside .stars{
+          
+        position: absolute;
+        font-size: 10px;
+        left: 45%;
+        bottom: 15px;
+    }
+    .gallery_section .stars{
+        font-size: 10px;
+        margin-left: 10px;
+    }
+
+    .afficherplus, .afficherplus a{
+        width: 735px;
+    }
+
+}
