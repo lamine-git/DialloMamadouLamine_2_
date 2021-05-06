@@ -1,0 +1,293 @@
+@font-face {
+    font-family: "Raleway";
+    src: url(polices/Raleway/static/Raleway-Medium.ttf);
+}
+
+body
+{
+    font-family: Raleway, Arial, Helvetica, sans-serif;    
+    font-size: 15px;
+}
+
+.container
+{
+    width: 95%;
+    margin: auto;    
+}
+
+/*----------------Header----------------------------*/
+
+.inscrire
+{
+    float: right;
+    /*padding-right: 15px;*/
+    padding-left: 15px;
+    padding-bottom: 24px;
+    padding-top: 30px;
+}
+
+.element a
+{
+    text-decoration: none;
+}
+
+.element
+{
+    list-style: none;
+}
+
+/******* insersion de inputsearch********/
+button
+{
+    cursor: pointer;
+}
+
+#filterlogoloc
+{
+    width: 40px;
+    height: 36px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+#inputsearch
+{
+    display: flex;
+    flex-direction: row;
+}
+
+#inputsearch input
+{
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    height: 36px;
+    font-family: 'Raleway';
+    width: 200px;
+    
+
+}
+
+#inputsearch button
+{
+    border: none;
+    height: 36px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    font-family: 'Raleway';
+    color: #fff;
+}
+
+#groupesearch
+{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 100%;
+
+}
+/***************fin input *********/
+
+
+@media screen and (max-width: 767px)
+{
+    header
+    {
+        background-image: url('logo/Reservia.svg');
+        background-position: 0px 15px;
+        background-repeat: no-repeat;
+    } 
+
+    .list
+    {
+        width: 100%;
+        display: flex;
+        padding: 0;
+    }
+
+    .item
+    {
+        width: 100%;
+    }
+
+    .link
+    {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 1.5rem;
+        border-bottom: 5px solid #F2F2F2;
+
+    }
+
+    .selected
+    {
+        border-bottom: solid #0065FC;
+        color: #0065FC;        
+    }
+
+    /* pour le filtre */
+
+    #filtre h2{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    header
+    {
+                
+        background-image: url('logo/Reservia@3x.png');
+        background-repeat: no-repeat;
+        background-position: 0px 35px;
+        background-size: 13%
+        
+    }
+
+    nav
+    {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: baseline;
+        padding-top: 30px;
+    }
+
+    .list
+    {
+        display: flex;
+        
+    }
+
+    .item
+    {
+        padding-left: 15px;
+    }
+
+    
+
+    .link
+    {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding-top: 1.5rem;
+        border-top: 5px solid white;
+
+    } 
+    .selected
+    {
+        border-top: 5px solid #0065FC;
+        color: #0065FC;        
+    }
+
+    .element:nth-child(2)
+    {
+        order: 1;
+    }
+    
+    .element:nth-child(1)
+    {
+        order: 2;
+    }
+    
+}
+
+/* css filtre*/
+
+
+
+#filtre
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+#filtre h2{
+    margin-bottom: 0px;
+    /*-----------------*/
+    margin-left: 15px;
+}
+
+.bouton
+{
+    border: 2px solid #F2F2F2;
+    padding: 0;
+    border-radius: 18px 18px 18px 18px;
+    cursor: pointer;
+    border-left: none;
+    margin-top: 15px;
+    
+    
+    margin-left: 15px;  /* A supprimer lors de l'insertion dans index*/
+}
+
+#filtre .bouton:hover{
+    border: 2px solid #0065FC;
+}
+
+
+.filterlogo
+{
+    width: 38px;
+    height: 38px;
+    border-radius: 18px;
+    background-color: #DEEBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    color: #0065FC;
+}
+.groupe
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.filtername
+{
+    /*margin-left: 5px;*/
+    padding: 10px;
+}
+
+.iconinfo{
+    border: 2px solid #F2F2F2;
+    border-radius: 15px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 3px;
+    
+
+}
+
+.iconinfo i{
+    color: #0065FC;
+}
+
+.disponible{
+       
+    margin-left: 15px;
+    margin-top: 15px;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+/* fin css filtre*/
+
+/*------------------ FIN HEADER -----------------------*/
