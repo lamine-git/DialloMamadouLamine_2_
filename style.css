@@ -193,20 +193,22 @@ button
 .container_section, .container_aside{
     border-radius: 18px;
     background-color: #f2f2f2;
-  }
+}
   
-  .container_section .desc , .container_aside .desc{
+.container_section .desc , .container_aside .desc{
     margin-left: 10px;
       
-  } 
-  .namehotel{
+}
+
+.namehotel{
     font-weight: bold;
-  }
+}
   
-  .gallery_section a, .gallery_aside a{
+.gallery_section a, .gallery_aside a{
     text-decoration: none;
     
-  }
+}
+
 
   /* ------------- Les etoiles de notation--------*/
 .gallery_section .stars, .gallery_aside .stars{
@@ -214,22 +216,32 @@ button
     font-size: 10px;
     /*margin-left: 10px;*/
     margin-top: 10px;
-  }
+}
   
-  .fa-star {
+.fa-star {
     color: #f2f2f2;
   
-  }
-  .stars > .color {
+}
+.stars > .color {
     color: #0065FC;
   
-  }
+}
+ 
   
-  /* ---------------------Fin etoiles------------------------*/
+/* ---------------------Fin etoiles------------------------*/
 
 /*----------fin hergement et populaire---------------------------*/
 
+/*-----------debut de la partie activité à marseilles------------*/
+.gallery_activite .desc{
+    margin: 15px;
+}
+.gallery_activite a{
+    text-decoration: none;
+    color: black;
+}
 
+/*-------fin activité a marseilles-----------------------------*/
 
 @media screen and (max-width: 767px)
 {
@@ -348,6 +360,50 @@ button
         text-decoration: none;
         color: black;
     }
+
+    /*------------------debut activité à marseilles------------*/
+    .container_activite{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+             
+    }
+    
+    .colonne_2, .colonne_4{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .gallery_activite{
+        max-width: 400px;
+        width: 100%;
+        border-radius: 18px;
+        box-shadow: 6px 6px 6px #f2f2f2;
+        margin-bottom: 15px;
+    }
+    
+    .gallery_activite a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        
+        color: black;
+        
+    }
+    .gallery_activite img{
+        
+        width: 100%;
+        height: 133px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+    }
+    .item5 img{
+        object-position: 20% 10%;
+    }
+
+    /*--------fin activité à marseilles-----------------*/
 
 
 }
@@ -489,6 +545,81 @@ button
         text-decoration: none;
         color: black;
     }
+
+    /*--------------debut activité à marseilles-----------------*/
+    .container_activite{
+        width: 100%;
+        height: 440px;
+         
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      
+      .colonne_2, .colonne_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .gallery_activite{
+        
+        width: 340px;
+        
+        border-radius: 18px;
+        box-shadow: 6px 6px 6px #f2f2f2;
+      }
+      
+      .gallery_activite a{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      
+      
+      .item1, .item4{
+        
+        height: 440px;
+      } 
+      
+      .item2{
+        height: 50%;
+      }
+      .item3{
+        height: 40%;
+      }
+      .item5, .item6{
+        height: 45%;
+      }
+      
+      .item1 img, .item4 img{
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+    
+      .item5 img, .item6 img{
+        width: 100%;
+        height: 148px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item2 img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item3 img{
+        width: 100%;
+        height: 126px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+    
+      }
+    /*------------fin activité à marseilles------------------*/
 }
 
 @media screen and (min-width: 992px){
@@ -602,6 +733,83 @@ button
         width: 500px;
     }
 
+    /*------------debut activité à marseilles------------*/
+    .container_activite{
+        width: 100%;
+        height: 440px;
+         
+      }
+      
+      .container_activite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .colonne_2, .colonne_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .gallery_activite{
+        
+        width: 230px;
+        
+        border-radius: 18px;
+        box-shadow: 6px 6px 6px #f2f2f2;
+      }
+      
+      .gallery_activite a{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      
+      
+      .item1, .item4{
+        
+        height: 440px;
+      } 
+      
+      .item2{
+        height: 50%;
+      }
+      .item3{
+        height: 40%;
+      }
+      .item5, .item6{
+        height: 45%;
+      }
+      
+      .item1 img, .item4 img{
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item5 img, .item6 img{
+        width: 100%;
+        height: 148px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item2 img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item3 img{
+        width: 100%;
+        height: 126px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+    
+      }
+
+      /*-------------fin activité a marseilles-------------*/
+
 }
 
 @media screen and (min-width: 1200px){
@@ -709,5 +917,83 @@ button
     .afficherplus, .afficherplus a{
         width: 735px;
     }
+
+    /*-------------debut activité à marseilles------------*/
+    .container_activite{
+        width: 100%;
+        height: 440px;
+         
+      }
+      
+      .container_activite{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      
+      .colonne_2, .colonne_4{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .gallery_activite{
+        
+        width: 280px;
+        
+        border-radius: 18px;
+        box-shadow: 6px 6px 6px #f2f2f2;
+      }
+      
+      .gallery_activite a{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      
+      
+      .item1, .item4{
+        
+        height: 440px;
+      } 
+      
+      .item2{
+        height: 50%;
+      }
+      .item3{
+        height: 40%;
+      }
+      .item5, .item6{
+        height: 45%;
+      }
+      
+      
+      .item1 img, .item4 img{
+        width: 100%;
+        height: 390px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item5 img, .item6 img{
+        width: 100%;
+        height: 148px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item2 img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+      }
+      .item3 img{
+        width: 100%;
+        height: 126px;
+        object-fit: cover;
+        border-radius: 18px 18px 0 0;
+    
+      }
+
+    /*-------------fin activité à marseilles------------*/
 
 }
