@@ -404,6 +404,26 @@ button
     }
 
     /*--------fin activité à marseilles-----------------*/
+    /*---------debut footer-----------------------------*/
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+        padding-left: 10px;
+        margin-top: 25px;
+        background-color: #F2F2F2;
+        /*justify-content: space-between;*/
+    }
+    
+    .a_propos, .nos_hebergement, .assistance{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .container_footer a{
+        text-decoration: none;
+        color: black;
+    }
+    /*----------------fin footer------------------------*/
 
 
 }
@@ -620,6 +640,27 @@ button
     
       }
     /*------------fin activité à marseilles------------------*/
+    /*-----------------debut footer---------------------------*/
+    .container_footer{
+        display: flex;
+        flex-direction: row;
+        background-color: #F2F2F2;
+        margin-top: 25px;
+        padding-left: 10px;
+        /*justify-content: space-between;*/
+    }
+    
+    .a_propos, .nos_hebergement, .assistance{
+        display: flex;
+        flex-direction: column;
+        min-width: 250px;
+        width: 500px;
+    }
+    .container_footer a{
+        text-decoration: none;
+        color: black;
+    }
+    /*-----------------fin footer---------------------------*/
 }
 
 @media screen and (min-width: 992px){
