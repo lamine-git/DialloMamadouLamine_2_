@@ -183,6 +183,7 @@ button
     margin-top: 15px;
     align-items: baseline;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 /* fin css filtre*/
 
@@ -195,7 +196,7 @@ button
     background-color: #f2f2f2;
 }
   
-.container_section .desc , .container_aside .desc{
+.container_section .desc , .container_aside .desc, .container_section .stars{
     margin-left: 10px;
       
 }
@@ -206,7 +207,12 @@ button
   
 .gallery_section a, .gallery_aside a{
     text-decoration: none;
+    color: black;
     
+}
+
+.afficherplus{
+    font-weight: bold;
 }
 
 
@@ -235,10 +241,17 @@ button
 /*-----------debut de la partie activité à marseilles------------*/
 .gallery_activite .desc{
     margin: 15px;
+    font-weight: bold;
 }
 .gallery_activite a{
     text-decoration: none;
     color: black;
+}
+
+#activite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*-------fin activité a marseilles-----------------------------*/
@@ -359,6 +372,7 @@ button
         margin-bottom: 20px;
         text-decoration: none;
         color: black;
+        
     }
 
     /*------------------debut activité à marseilles------------*/
@@ -383,6 +397,11 @@ button
         box-shadow: 6px 6px 6px #f2f2f2;
         margin-bottom: 15px;
     }
+    #activite h2{
+        max-width: 400px;
+        width: 100%;
+        
+    }
     
     .gallery_activite a{
         display: block;
@@ -405,6 +424,7 @@ button
 
     /*--------fin activité à marseilles-----------------*/
     /*---------debut footer-----------------------------*/
+
     .container_footer{
         display: flex;
         flex-direction: column;
@@ -567,78 +587,85 @@ button
     }
 
     /*--------------debut activité à marseilles-----------------*/
+    
+    #activite h2{
+        max-width: 737px;
+        width: 690px;
+        
+    }
+
     .container_activite{
         width: 100%;
-        height: 440px;
+        /* height: 440px; */
          
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: space-between;
-      }
+    }
       
-      .colonne_2, .colonne_4{
+    .colonne_2, .colonne_4{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-      }
+    }
       
-      .gallery_activite{
+    .gallery_activite{
         
         width: 340px;
-        
         border-radius: 18px;
         box-shadow: 6px 6px 6px #f2f2f2;
-      }
+    }
       
-      .gallery_activite a{
+    .gallery_activite a{
         display: block;
         height: 100%;
         width: 100%;
-      }
+    }
       
       
-      .item1, .item4{
+    .item1, .item4{
         
         height: 440px;
-      } 
+    } 
       
-      .item2{
+    .item2{
         height: 50%;
-      }
-      .item3{
+    }
+    .item3{
         height: 40%;
-      }
-      .item5, .item6{
+    }
+    .item5, .item6{
         height: 45%;
-      }
+    }
       
-      .item1 img, .item4 img{
+    .item1 img, .item4 img{
         width: 100%;
         height: 380px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
+    }
     
-      .item5 img, .item6 img{
+    .item5 img, .item6 img{
         width: 100%;
         height: 148px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
-      .item2 img{
+    }
+    .item2 img{
         width: 100%;
         height: 170px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
-      .item3 img{
+    }
+    .item3 img{
         width: 100%;
         height: 126px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
     
-      }
+    }
+    
     /*------------fin activité à marseilles------------------*/
     /*-----------------debut footer---------------------------*/
     .container_footer{
@@ -646,7 +673,7 @@ button
         flex-direction: row;
         background-color: #F2F2F2;
         margin-top: 25px;
-        padding-left: 10px;
+        padding-left: 10px; 
         /*justify-content: space-between;*/
     }
     
@@ -659,7 +686,7 @@ button
     .container_footer a{
         text-decoration: none;
         color: black;
-    }
+    } 
     /*-----------------fin footer---------------------------*/
 }
 
@@ -779,77 +806,78 @@ button
         width: 100%;
         height: 440px;
          
-      }
-      
-      .container_activite{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-      }
+    }
+    #activite h2{
+        max-width: 950px;
+        width: 950px;
+    }
       
-      .colonne_2, .colonne_4{
+    .colonne_2, .colonne_4{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-      }
+    }
       
-      .gallery_activite{
+    .gallery_activite{
         
         width: 230px;
         
         border-radius: 18px;
         box-shadow: 6px 6px 6px #f2f2f2;
-      }
+    }
       
-      .gallery_activite a{
+    .gallery_activite a{
         display: block;
         height: 100%;
         width: 100%;
-      }
+    }
       
       
-      .item1, .item4{
+    .item1, .item4{
         
         height: 440px;
-      } 
+    } 
       
-      .item2{
+    .item2{
         height: 50%;
-      }
-      .item3{
+    }
+    .item3{
         height: 40%;
-      }
-      .item5, .item6{
+    }
+    .item5, .item6{
         height: 45%;
-      }
+    }
       
-      .item1 img, .item4 img{
+    .item1 img, .item4 img{
         width: 100%;
         height: 390px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
-      .item5 img, .item6 img{
+    }
+    .item5 img, .item6 img{
         width: 100%;
         height: 148px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
-      .item2 img{
+    }
+    .item2 img{
         width: 100%;
         height: 170px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
-      }
-      .item3 img{
+    }
+    .item3 img{
         width: 100%;
         height: 126px;
         object-fit: cover;
         border-radius: 18px 18px 0 0;
     
-      }
+    }
 
-      /*-------------fin activité a marseilles-------------*/
+    /*-------------fin activité a marseilles-------------*/
 
 }
 
@@ -872,7 +900,7 @@ button
     
     .container_section h2{
         width: 770px; 
-        margin-bottom: 0px;
+        margin: 20px 0px 20px 0px;
     }
   
     .container_aside h2{
@@ -886,7 +914,8 @@ button
         flex-wrap: wrap;
         justify-content: center;
         background-color: #f2f2f2;
-        margin-right: 20px;    
+        margin-right: 20px;
+        height: 603.34px;    
     }
   
     .gallery_section{
@@ -964,13 +993,16 @@ button
         width: 100%;
         height: 440px;
          
-      }
       
-      .container_activite{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-      }
+    }
+
+    #activite h2{
+        max-width: 1150px;
+        width: 1150px;
+    }
       
       .colonne_2, .colonne_4{
         display: flex;
