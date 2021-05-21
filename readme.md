@@ -42,3 +42,5 @@ Afin de faciliter le code, la maquette a été délimité en diférentes parties
 l'entête du site avec **HEADER**, le menu de navigation  avec **NAV**, deux balises **SECTION**: une pour la partie hébergement et l'autre pour la partie activité à Marseille et enfin le FOOTER pour le pied de page.
 
 Le code ne contient aucune erreur au validateur W3C HTML et CSS
+
+Le fichier file_gitignore.html est un fichier de test que j'ai ajouté dans .gitignore
