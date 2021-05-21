@@ -256,6 +256,9 @@ button
 
 /*-------fin activité a marseilles-----------------------------*/
 
+
+
+
 @media screen and (max-width: 767px)
 {
     header
@@ -407,7 +410,6 @@ button
         display: block;
         height: 100%;
         width: 100%;
-        
         color: black;
         
     }
@@ -423,7 +425,7 @@ button
     }
 
     /*--------fin activité à marseilles-----------------*/
-    /*---------debut footer-----------------------------*/
+   
 
     .container_footer{
         display: flex;
@@ -442,6 +444,8 @@ button
     .container_footer a{
         text-decoration: none;
         color: black;
+        margin-top: 10px;
+        
     }
     /*----------------fin footer------------------------*/
 
@@ -686,6 +690,7 @@ button
     .container_footer a{
         text-decoration: none;
         color: black;
+        margin-top: 10px;
     } 
     /*-----------------fin footer---------------------------*/
 }
